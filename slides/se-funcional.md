@@ -1,0 +1,3 @@
+##  Sé funcional
+
+Una anecdota…

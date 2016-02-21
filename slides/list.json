@@ -1,1 +1,15 @@
-["index.md"]
+[
+    "index.md",
+    "se-funcional.md",
+    "el-paradigma.md",
+    [
+        "paradigma-imperativo.md",
+        "paradigma-imperativo-descripcion.md"
+    ],
+    [
+        "paradigma-oo.md",
+        "paradigma-oo-descripcion.md"
+    ],
+    "paradigma-funcional.md",
+    "funciones.md"
+]

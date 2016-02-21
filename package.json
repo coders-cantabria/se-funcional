@@ -23,6 +23,10 @@
     "url": "git@github.com:sirreal/se-funcional.git"
   },
   "scripts": {
-    "test": "grunt test"
+    "test": "grunt test",
+    "start": "grunt",
+    "serve": "grunt serve",
+    "deploy": "grunt deploy",
+    "dist": "grunt dist"
   }
 }
