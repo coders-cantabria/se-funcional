@@ -1,0 +1,11 @@
+{
+  "generator-reveal": {
+    "presentationTitle": "Sé funcional",
+    "packageVersion": "0.1.0",
+    "revealTheme": "black",
+    "useSass": false,
+    "deployToGithubPages": true,
+    "githubUsername": "sirreal",
+    "githubRepository": "se-funcional"
+  }
+}
