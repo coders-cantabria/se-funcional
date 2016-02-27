@@ -1,6 +1,3 @@
 ##  El paradigma funcional
 
-* Análisis de problema
-* Comparativa de paradigmas
-* Vista de programación funcional
-* ...
+<div style="font-size:500%;"><b>?</b></div>

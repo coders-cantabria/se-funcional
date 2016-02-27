@@ -10,12 +10,24 @@
         "paradigma-oo.md",
         "paradigma-oo-descripcion.md",
         "crazy-oo.md",
-        "quote.md"
+        "quote.md",
+        "quien-escribe-oo.md"
     ],
     "paradigma-funcional.md",
     "funciones-matematicas.md",
     "funciones-puras.md",
     "funcional-ejemplo.md",
+    "funcional-ejemplo2.md",
+    "funcional-ejemplo3.md",
+
+    "efectos-secundarios.md",
+    "mutaciones.md",
+
+    "conceptos-fundamentales.md",
+    "recursion.md",
+    "higher-order.md",
+    "closure.md",
+
     "que-me-importa.md",
     "como-ser-funcional.md"
 ]

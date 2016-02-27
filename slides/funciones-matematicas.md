@@ -1,6 +1,6 @@
 <ul>
   <li>Funciones *matemáticas* (puras)</li>
-  <li>`Función :: Input -> Output`</li>
+  <li>`F :: In -> Out`</li>
   <li class="fragment" data-fragment-index="1">Input y Output son conjuntos</li>
   <li class="fragment" data-fragment-index="2">Cada Input corresponde a un *único* Output</li>
   <li class="fragment" data-fragment-index="3">Mapeo desde Input a Output</li>

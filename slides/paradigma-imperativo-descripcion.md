@@ -10,5 +10,5 @@ for (var i = 0; i < l.length; i++) {
         gt2.push(l[i])
     }
 }
-// [3, 4, 5]
+// gt2 == [3, 4, 5]
 ```
