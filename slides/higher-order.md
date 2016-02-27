@@ -1,5 +1,3 @@
-## Higher order functions
+## Higher order functions (funciones de orden superior)
 
-```js
-
-```
+Funciones que reciben o devuelven funciones.

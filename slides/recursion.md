@@ -1,18 +1,12 @@
-## Recursion
+## Recursión
 
-```js
-function fibonacci(n) {
-    if (n < 1) {
-        return 0
-    }
-    if (n === 1 || n === 2) {
-        return 1
-    }
-    return fibonacci(n - 1) + fibonacci(n - 2)
-}
-```
-```js
-const fibo = (n) => n < 1 ? 0
-    : n < 3 ? 1
-        : fibo(n-1) + fibo(n-2)
-```
+Funciones recursivas emplean la estratégia de
+obtener el resultado a base de resolver problemas
+reducidas del mismo tipo.
+
+Son funciones que llaman a si mismo para obtener el resultado.
+
+Esencial para recursión:
+* Caso base
+* Instrucciones para aproximan los demas
+casos hacia el caso base

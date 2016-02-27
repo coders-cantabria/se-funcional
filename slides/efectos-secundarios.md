@@ -1,8 +1,15 @@
-# Efectos secundarios
+## Efectos secundarios
 
 ```js
 function dangerousAdd(a, b) {
-    launchMissles() // <-- OH NO!
+    launchMissles()  // !!!
     return a + b
+}
+```
+
+```js
+function checkPassword(inputPassword, realPassword) {
+    if (inputPassword === realPassword)
+        logCurrentUserIn()  // !!!
 }
 ```

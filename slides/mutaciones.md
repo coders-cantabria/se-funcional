@@ -13,7 +13,6 @@ for (let i=0; i<l.length; i++) {
 ```
 
 <div class="fragment">
-
 <pre><code class="lang-js hljs javascript">x == 2
 y == [2, 3, 4, 5, 6]
 </code></pre>
