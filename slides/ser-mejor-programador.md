@@ -9,4 +9,5 @@
 > C++ templates), and one that emphasizes parallelism
 > (like Clojure or Go).
 > <br>
-> - Peter Norvig, "Teach Yourself Programming in Ten Years"
+
+Peter Norvig, "Teach Yourself Programming in Ten Years"
