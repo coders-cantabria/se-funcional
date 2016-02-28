@@ -1,9 +1,9 @@
 <div class="fragment">
   <ul>
     <li>
-      <p>Utiliza funciones puras</p>
+      <p>Utilizar funciones puras</p>
       <ul>
-        <li>Elimina efectos secundarios</li>
+        <li>Eliminar efectos secundarios</li>
         <li>Evitar mutación (valores inmutables)</li>
         <li>`F :: Input -> Output`</li>
       </ul>
