@@ -1,10 +1,11 @@
 # Conceptos fundamentales
 
 <ul>
-  <li class="fragment">Higher-order functions</li>
-  <li class="fragment">Recursión</li>
-  <li class="fragment">Closure</li>
-  <li class="fragment">Lambda</li>
-  <li class="fragment">Partial application</li>
-  <li class="fragment">Curry</li>
+  <li class="Xfragment">Higher-order functions</li>
+  <li class="Xfragment">Recursión</li>
+  <li class="Xfragment">Closure</li>
+  <li class="Xfragment">Lambda</li>
+  <li class="Xfragment">Composición</li>
+  <li class="Xfragment">Partial application</li>
+  <li class="Xfragment">Curry</li>
 </ul>

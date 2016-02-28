@@ -1,14 +1,11 @@
 ## F :: Input -> Output
 
 ```js
-function onePlusTwo() {
-    return 1 + 2
-}
+const onePlusTwo = () => 1 + 2
 ```
 
 <div class="fragment">
 Obviamente igual que:
-<pre><code class="lang-js hljs javascript">function onePlusTwox() {
-    return 3
-}</code></pre>
+<pre><code class="lang-js hljs javascript">const onePlusTwo_ () => 3
+</code></pre>
 </div>

@@ -3,7 +3,7 @@
 </h2>
 
 <div style="float:left;width:50%;">
-<pre><code class="lang-js hljs javascript">function increment(x) {
+<pre><code class="lang-js hljs javascript">const increment_ = (x) => {
     switch (x) {
         // ...
         case -1: return 0

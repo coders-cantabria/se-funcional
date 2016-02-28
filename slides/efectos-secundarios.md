@@ -1,14 +1,14 @@
 ## Efectos secundarios
 
 ```js
-function dangerousAdd(a, b) {
+const dangerousAdd = (a, b) => {
     launchMissles()  // !!!
     return a + b
 }
 ```
 
 ```js
-function checkPassword(inputPassword, realPassword) {
+const checkPassword = (inputPassword, realPassword) => {
     if (inputPassword === realPassword) {
         logCurrentUserIn()  // !!!
         return true
