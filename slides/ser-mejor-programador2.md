@@ -1,10 +1,10 @@
-## Ser mejor programador
+> Learn at least a half dozen programming languages.
+> Include one language that emphasizes class abstractions
+> (like Java or C++), one that emphasizes functional
+> abstraction (like Lisp or ML or Haskell), one that
+> supports syntactic abstraction (like Lisp), one that
+> supports declarative specifications (like Prolog or
+> C++ templates), and one that emphasizes parallelism
+> (like Clojure or Go).
 
-Aprender un lenguaje funcional (sea puro
-o no) te obliga a afrontar la programación
-de una manera distinta. Es un gran ejercicio
-mental. Junto con las funciones y abstracciones
-"higher-order", tus pensamientos pasan a otro
-nivel.
-
-<span class="fragment">- Jon Surrell</span>
+"Teach Yourself Programming in Ten Years", Peter Norvig, Director of Research Google

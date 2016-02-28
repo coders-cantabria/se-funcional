@@ -7,6 +7,7 @@ function increment(x) {
 ```
 
 <div class="fragment">
+Igual que (teóricamente):
 <pre><code class="lang-js hljs javascript">function increment(x) {
     switch (x) {
         // ...

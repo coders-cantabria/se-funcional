@@ -1,19 +1,23 @@
 # Mutaciones
 
-```js
-var x = 0
-var l= [1, 2, 3, 4, 5]
-for (let i=0; i<l.length; i++) {
-    if (l[i]++ % 2 === 0) {   // <- Mutación
-        x++                   // <- Mutación
-    }
-}
-// x == ??
-// l == ??
-```
+Imaginamos una petición AJAX.
 
-<div class="fragment">
-<pre><code class="lang-js hljs javascript">x == 2
-y == [2, 3, 4, 5, 6]
-</code></pre>
-</div>
+¿Qué valor tienen `x`?
+
+```js
+var x = "init"
+
+const f1 = () => new Promise((resolve) => setTimeout(
+    () => {
+        x = "f1"
+        resolve()
+    }, Math.floor(Math.random() * 1000)))
+
+const f2 = () => new Promise((resolve) => setTimeout(
+    () => {
+        x = "f2"
+        resolve()
+    }, Math.floor(Math.random() * 1000)))
+
+Promise.all([f1(), f2()]).then(() => console.log(x))
+```
