@@ -5,6 +5,6 @@ No es más que una función anónima.
 Tiene gran utilidad cuando se combina con funciones *higher-order*.
 
 ```js
-           v ------------------- λ ------------------- v
+//         | ------------------- λ ------------------- |
 setTimeout(() => console.log('El tiempo se ha acabado!'), 1000)
 ```

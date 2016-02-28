@@ -3,7 +3,6 @@
 ```js
 const memo = (f) => {
     _memo = {}
-
     return (...args) => {
         const input = JSON.stringify(args)
         return _memo[input] ? _memo[input]
@@ -11,7 +10,7 @@ const memo = (f) => {
     }
 }
 
-const fibo_ = memo((n) => n < 1 ? 0
-                                : n < 3 ? 1
-                                        : fibo(n-1) + fibo(n-2))
+const fibo_ = memo(
+    (n) => n < 1 ? 0 : n < 3 ? 1 : fibo_(n-1) + fibo_(n-2)
+)
 ```
