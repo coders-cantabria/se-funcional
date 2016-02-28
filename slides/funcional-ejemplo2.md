@@ -7,6 +7,7 @@ function onePlusTwo() {
 ```
 
 <div class="fragment">
+Obviamente igual:
 <pre><code class="lang-js hljs javascript">function onePlusTwox() {
     return 3
 }</code></pre>
