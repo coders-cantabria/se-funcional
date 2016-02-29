@@ -1,29 +1,11 @@
-5
 ```js
-let rows = []
-for (let i=0; i<us.length; i++) { const u = us[i]
-  // ...
-  rows.push('<tr>' + colHtml + '</tr>')
-}
+const balance = reduce((a, b) => a + b, 0, u.transactions)
 ```
-```js
-let balance = 0
-for (let j=0; j<u.transactions.length; j++) {
-  balance += u.transactions[j]
-}
-```
-```js
-let fusers = []
-for (let j=0; j<us.length; j++) { const fuser = us[j]
-  if (u.friends.indexOf(fuser.id) > -1) {
-    fusers.push(fuser)
-  }
-}
-```
-```js
-let friendsHtml = ''
-for (let j=0; j<fusers.length; j++) { const f = fusers[j]
-  const fname = f.name
-  friendsHtml += '<li>' + fname + '</li>'
-}
-```
+<div class="fragment"><pre class="hljs javascript"><code>const reduce__ = (f, ini, arr) => '?'
+</code></pre></div>
+
+<div class="fragment"><pre class="hljs javascript"><code>const reduce = (f, acc, arr) =>
+  0 === arr.length
+    ? acc
+    : reduce(f, f(acc, arr[0]), arr.slice(1))
+</code></pre></div>

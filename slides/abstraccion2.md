@@ -1,6 +1,6 @@
 ```js
-const users2html = () => {
-  let rows = [];
+const users2html = (us) => {
+  let rowHtml = '';
   for (let i=0; i<us.length; i++) { const u = us[i]
     let colHtml = ''
     colHtml += '<td>'+u.id+'</td><td>'+u.name+'</td><td>'+u.occupation+'</td>'
@@ -20,16 +20,15 @@ const users2html = () => {
 
     let friendsHtml = ''
     for (let j=0; j<fusers.length; j++) { const f = fusers[j]
-      const fname = f.name
-      friendsHtml += '<li>' + fname + '</li>'
+      friendsHtml += '<li>' + f.name + '</li>'
     }
     colHtml += '<td><ul>' + friendsHtml + '</ul></td>'
 
-    rows.push('<tr>' + colHtml + '</tr>')
+    rowHtml += '<tr>' + colHtml + '</tr>'
   }
 
-  return '<tbody>' + rows.join('') + '</tbody>'
+  return '<tbody>' + rowHtml + '</tbody>'
 }
 
-document.querySelector('#app').innerHTML = users2html()
+document.querySelector('#app').innerHTML = users2html(users)
 ```
