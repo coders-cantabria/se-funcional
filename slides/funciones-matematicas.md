@@ -2,10 +2,10 @@
   <li>Funciones *matemáticas* (puras)</li>
   <li>`F :: In -> Out`</li>
   <li class="fragment" data-fragment-index="1">Input y Output son conjuntos</li>
-  <li class="fragment" data-fragment-index="2">Cada Input corresponde a un *único* Output</li>
-  <li class="fragment" data-fragment-index="3">Mapeo desde Input a Output</li>
+  <li class="fragment" data-fragment-index="2">Mapeo desde Input a Output (n:1)</li>
 </ul>
 
+<div>
 <svg xmlns="http://www.w3.org/2000/svg" width="321" height="345" xmlns:xlink="http://www.w3.org/1999/xlink">
   <defs>
     <linearGradient id="a">
@@ -58,7 +58,7 @@
     <path fill="url(#j)" d="M282.338 113.425c0 10.32-8.367 18.688-18.688 18.688-10.32 0-18.688-8.367-18.688-18.688 0-10.32 8.367-18.687 18.688-18.687 10.32 0 18.688 8.366 18.688 18.687z" transform="translate(-21.96 164.94)"/>
   </g>
 
-  <g class="fragment" data-fragment-index="3">
+  <g class="fragment" data-fragment-index="2">
     <path d="M230.55 85.418L81.582 95.543l.062 1 149-10.125-.094-1z"/>
     <path stroke="#000" stroke-width="1" d="M235.204 85.62l-6.634 4.46-.54-7.983 7.174 3.523z"/>
     <path d="M233.238 94.7L87.268 265.417l.782.656 145.97-170.72-.782-.655z"/>
@@ -70,3 +70,4 @@
   </g>
 
 </svg>
+</div>
