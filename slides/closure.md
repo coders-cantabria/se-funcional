@@ -3,9 +3,9 @@
 La "captura" de variables de un *scope* superior.
 
 ```js
-function initCounter(init) {
+const initCounter = (init) => {
     // ^^^ scope de init vvv
-    return function() { return init++ }
+    return () => init++
     // ^^^ scope de init vvv
 }
 
