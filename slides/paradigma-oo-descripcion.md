@@ -1,7 +1,7 @@
 Utiliza objetos para favorecer:
 
-* Encapsulamiento / abstraer
-* Reutilizar de código
+* Encapsulamiento / abstracción
+* Reutilización de código
 
 ```js
 function GtArray(arr, limit) {
