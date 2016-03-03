@@ -17,8 +17,3 @@ Igual que (teóricamente):
     }
 }</code></pre>
 </div>
-
-<div class="fragment">
-Esto es un ejemplo de una optimización *real*.
-</div>
-

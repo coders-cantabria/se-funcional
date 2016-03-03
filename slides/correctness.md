@@ -1,5 +1,5 @@
-## Correctness (correctitud)
+## Programas extremadamente correctos
+
+* Los principios funcionales *reducen* complejidad
 
 * Lenguajes funcionales ofrecen tipado muy potente
-* Fácil razonar y fácil testear == fácil ser correcto
-* Eliminar mutación reduce complejidad

@@ -14,14 +14,20 @@ const users2html = (us) => {
 document.querySelector('#app').innerHTML = users2html(users)
 ```
 
+### !! `reduce` !!
+
+```js
+// userToHtml :: String -> [users] -> String
+// const userToHtml = (html, u) => undefined
+const users2html = (us) =>
+  '<tbody>' + reduce(userToHtml, '', us) + '</tbody>'
+
+document.querySelector('#app').innerHTML = users2html(users)
+```
+
 ---
 
 ```js
-let colHtml = ''
-colHtml += '<td>'+u.id+'</td>'
-        +  '<td>'+u.name+'</td>'
-        +  '<td>'+u.occupation+'</td>'
-
 let balance = 0
 for (let j=0; j<u.transactions.length; j++) {
   const t = u.transactions[j]
@@ -30,19 +36,8 @@ for (let j=0; j<u.transactions.length; j++) {
 colHtml += '<td>' + balance + ' €</td>'
 ```
 
----
+### !! `reduce` !!
 
 ```js
-let fusers = []
-for (let j=0; j<us.length; j++) { const fuser = us[j]
-  if (u.friends.indexOf(fuser.id) > -1) {
-    fusers.push(fuser)
-  }
-}
-
-let friendsHtml = ''
-for (let j=0; j<fusers.length; j++) { const f = fusers[j]
-  friendsHtml += '<li>' + f.name + '</li>'
-}
-colHtml += '<td><ul>' + friendsHtml + '</ul></td>'
+const balance = reduce((a, b) => a + b, 0, u.transactions)
 ```

@@ -5,9 +5,10 @@
 ```js
 var l = [1, 2, 3, 4, 5]
 var gt2 = []
-for (var i = 0; i < l.length; i++) {
-    if (l[i] > 2) {
-        gt2.push(l[i])
+var el
+while (el = l.shift()) {
+    if (el > 2) {
+        gt2.push(el)
     }
 }
 // gt2 == [3, 4, 5]

@@ -1,8 +1,8 @@
 <ul>
   <li>Funciones *matemáticas* (puras)</li>
-  <li>`F :: In -> Out`</li>
-  <li class="fragment" data-fragment-index="1">Input y Output son conjuntos</li>
-  <li class="fragment" data-fragment-index="2">Mapeo desde Input a Output (n:1)</li>
+  <li>`f :: i -> o`</li>
+  <li class="fragment" data-fragment-index="1">Mapeo desde conjunto input al conjunto output</li>
+  <li class="fragment" data-fragment-index="1">Cada input corresponde a *exactamente* 1 output</li>
 </ul>
 
 <div>
@@ -40,7 +40,7 @@
     <radialGradient id="h" cx="263.65" cy="113.425" r="18.688" xlink:href="#e" fx="263.65" fy="113.425" gradientUnits="userSpaceOnUse"/>
   </defs>
 
-  <g class="fragment" data-fragment-index="1">
+  <g>
     <text fill="#fff" font-size="28" font-family="sans-serif"><tspan x="75" y="50" text-anchor="middle">Input</tspan></text>
     <path fill="#333" stroke="#969696" stroke-width="1" d="M130.088 185.937c0 67.784-24.987 122.734-55.81 122.734-30.824 0-55.81-54.95-55.81-122.73 0-67.784 24.986-122.733 55.81-122.733 30.823 0 55.81 54.95 55.81 122.733z"/>
     <path fill="#bd264f" stroke="#000" stroke-width="1" d="M91.198 111.69l-18.61.138-18.608.137 9.186-16.184L72.35 79.6l9.425 16.047z"/>
@@ -48,7 +48,7 @@
     <path fill="#05944c" stroke="#000" stroke-width="1" d="M89.177 195.028l-17.172-11.616-15.658 14.647 6.566 25.25 26.77-9.09-15.658-10.607z"/>
     <path fill="#bd264f" stroke="#000" stroke-width="1" d="M55.842 249.072h31.82v31.315h-31.82z"/>
   </g>
-  <g class="fragment" data-fragment-index="1">
+  <g>
     <text fill="#fff" font-size="28" font-family="sans-serif"><tspan x="240" y="35" text-anchor="middle">Output</tspan></text>
     <path fill="#333" stroke="#969696" stroke-width="1" d="M303 185.937c0 76.99-27.25 139.4-60.862 139.4-33.613 0-60.862-62.41-60.862-139.4 0-76.99 27.25-139.4 60.862-139.4 33.613 0 60.862 62.41 60.862 139.4z"/>
     <path fill="url(#f)" d="M282.338 113.425c0 10.32-8.367 18.688-18.688 18.688-10.32 0-18.688-8.367-18.688-18.688 0-10.32 8.367-18.687 18.688-18.687 10.32 0 18.688 8.366 18.688 18.687z" transform="translate(-21.96 -26.988)"/>
@@ -58,7 +58,7 @@
     <path fill="url(#j)" d="M282.338 113.425c0 10.32-8.367 18.688-18.688 18.688-10.32 0-18.688-8.367-18.688-18.688 0-10.32 8.367-18.687 18.688-18.687 10.32 0 18.688 8.366 18.688 18.687z" transform="translate(-21.96 164.94)"/>
   </g>
 
-  <g class="fragment" data-fragment-index="2">
+  <g class="fragment" data-fragment-index="1">
     <path d="M230.55 85.418L81.582 95.543l.062 1 149-10.125-.094-1z"/>
     <path stroke="#000" stroke-width="1" d="M235.204 85.62l-6.634 4.46-.54-7.983 7.174 3.523z"/>
     <path d="M233.238 94.7L87.268 265.417l.782.656 145.97-170.72-.782-.655z"/>

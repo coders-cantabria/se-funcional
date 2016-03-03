@@ -1,4 +1,4 @@
-# Conceptos fundamentales
+## Conceptos relevantes
 
 <ul>
   <li class="Xfragment">Higher-order functions</li>

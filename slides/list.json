@@ -3,7 +3,6 @@
   "paradigma-imperativo.md",
   "paradigma-imperativo-descripcion.md",
   "paradigma-funcional.md",
-  "paradigma-funcional2.md",
   "funciones-matematicas.md",
   "funciones-matematicas2.md",
   "funciones-puras.md",
@@ -14,6 +13,17 @@
   "correctness.md",
   "ser-mejor-programador.md",
   "ser-mejor-programador2.md",
+
+  "abstraccion.md",
+  "abstraccion1.md",
+  "abstraccion2.md",
+  "funciones-array.md",
+  "refactor.md",
+  "abstraccion3.md",
+  "abstraccion4.md",
+  "abstraccion5.md",
+  "abstraccion6.md",
+
   "conceptos-fundamentales.md",
   "higher-order.md",
   "higher-order2.md",
@@ -27,12 +37,5 @@
   "composicion.md",
   "aplicacion-parcial.md",
   "curry.md",
-  "como-ser-funcional.md",
-  "abstraccion.md",
-  "abstraccion1.md",
-  "abstraccion2.md",
-  "abstraccion3.md",
-  "abstraccion4.md",
-  "abstraccion5.md",
-  "abstraccion6.md"
+  "como-ser-funcional.md"
 ]
