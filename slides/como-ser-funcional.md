@@ -1,14 +1,7 @@
-<div class="fragment">
-  <ul>
-    <li>
-      <p>Utilizar funciones puras</p>
-      <ul>
-        <li>Eliminar efectos secundarios</li>
-        <li>Evitar mutación (valores inmutables)</li>
-        <li>`F :: Input -> Output`</li>
-      </ul>
-    </li>
-    <li>Componer funciones a partir de otras</li>
-    <li>Abstraer/componer funcionalidad común</li>
-  </ul>
-</div>
+## ¿Qué puedo hacer?
+
+* Utilizar funciones puras
+* Eliminar efectos secundarios
+* Evitar mutación (valores inmutables)
+* Componer funciones a partir de otras
+* Abstraer funcionalidad común

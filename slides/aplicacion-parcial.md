@@ -1,6 +1,6 @@
 ## Aplicación parcial
 
-Podemos pasar argumentos a una función poco a poco.
+"Guardamos" algunos parametros de una función
 
 ```js
 const apply = (f, x) => (y) => f(x, y)
