@@ -1,3 +1,5 @@
+const xs = [10, 5, 0, -5, 1, 10, 1000, -1]
+
 const users = [
   {
     id: '87e2fbc2',

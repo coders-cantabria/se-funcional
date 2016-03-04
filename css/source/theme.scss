@@ -13,6 +13,7 @@
 // Default mixins and settings -----------------
 @import "../../bower_components/reveal.js/css/theme/template/mixins";
 @import "../../bower_components/reveal.js/css/theme/template/settings";
+@import "fonts";
 // ---------------------------------------------
 
 
@@ -51,3 +52,52 @@ section.has-light-background {
 // Theme template ------------------------------
 @import "../../bower_components/reveal.js/css/theme/template/theme";
 // ---------------------------------------------
+
+.reveal {
+  $bg-code: #3f3f3f;
+  $bg-code-inline: $bg-code;
+  $fg-code-inline: #efef8f;
+
+  pre:first-child {
+    margin-top: 0;
+  }
+
+  pre:last-child {
+    margin-bottom: 0;
+  }
+
+  .fragment pre {
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+
+  pre, code {
+    font-family: $mono;
+  }
+
+  code {
+    display: inline-block;
+    background-color: $bg-code-inline;
+    padding: .12em .15em .08em;
+    border-radius: .1em;
+    font-size: 70%;
+    color: $fg-code-inline;
+    text-transform: none;
+  }
+
+  pre code {
+    display: block;
+    background-color: $bg-code;
+    font-size: 100%;
+    color: #fff;
+  }
+
+  blockquote {
+    font-style: normal;
+    font-size: 80%;
+    padding-left: .5em;
+    padding-right: .5em;
+    text-align: left;
+  }
+
+}

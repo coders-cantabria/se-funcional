@@ -1,3 +1,12 @@
+const add = (a, b) => a + b
+const prod = (a, b) => a * b
+const gt = (a, b) => a > b
+const gte = (a, b) => a >= b
+const lt = (a, b) => a < b
+const lte = (a, b) => a <= b
+const eq = (a, b) => a === b
+
+
 const compose = (f, g) => (...args) => f(g(...args))
 
 const apply = (f, x) => (y) => f(x, y)
@@ -25,7 +34,12 @@ const reduce = (f, acc, xs) =>
     ? acc
     : reduce(f, f(acc, xs[0]), xs.slice(1))
 
-const add = (a, b) => a + b
+const map_ = (f, xs) =>
+  reduce((acc, x) => acc.concat(f(x)), [], xs)
+
+const filter_ = (pred, xs) =>
+  reduce((acc, x) => pred(x) ? acc.concat(x) : acc, [], xs)
+
 const elem = (x, xs) => -1 < xs.indexOf(x)
 const wrap = (el) => (t) => `<${el}>${t}</${el}>`
 const td = wrap('td')
@@ -77,7 +91,7 @@ const users2html = (us) => {
 const logInOut = (f) =>
     (...args) => {
         const result = f(...args)
-        console.log("%s(%s) = %O", f.name, args.join(', '), result)
+        console.log('%s(%s) = %O', f.name, args.join(', '), result)
         return result
     }
 
@@ -100,12 +114,12 @@ const fibo_ = memo(
     (n) => n < 1 ? 0 : n < 3 ? 1 : fibo_(n-1) + fibo_(n-2)
 )
 
-const fiboL = logInOut(memo(
+const fiboL = logInOut(
     (n) => n < 1 ? 0 : n < 3 ? 1 : fiboL(n-1) + fiboL(n-2)
-))
+)
 
-const fiboL_ = logInOut(memo(
+const fiboL_ = memo(logInOut(
     (n) => n < 1 ? 0 : n < 3 ? 1 : fiboL_(n-1) + fiboL_(n-2)
 ))
 
-
+/* eslint no-console:0 */

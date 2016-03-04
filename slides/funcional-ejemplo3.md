@@ -1,12 +1,12 @@
 ## F :: Input -> Output
 
 ```js
-const increment = (x) => x + 1
+const add1 = (x) => x + 1
 ```
 
 <div class="fragment">
 Igual que (teóricamente):
-<pre><code class="lang-js hljs javascript">const increment_ = (x) => {
+<pre><code class="lang-js hljs javascript">const add1_ = (x) => {
     switch (x) {
         // ...
         case -1: return 0
