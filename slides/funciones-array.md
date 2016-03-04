@@ -3,8 +3,8 @@
 Combinar 2 funciones para crear otra
 ```
 compose :: (b -> c) -> (a -> b) -> a -> c
-h = compose(f, g)
-h(x) === f(g(x))
+h = compose(g, f)
+h(x) === g(f(x))
 ```
 
 ---

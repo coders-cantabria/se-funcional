@@ -1,4 +1,4 @@
-## F :: Input -> Output
+## `f :: i -> o`
 
 ```js
 const onePlusTwo = () => 1 + 2

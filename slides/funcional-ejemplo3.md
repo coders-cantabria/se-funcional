@@ -1,4 +1,4 @@
-## F :: Input -> Output
+## `f :: i -> o`
 
 ```js
 const add1 = (x) => x + 1
