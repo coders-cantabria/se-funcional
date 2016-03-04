@@ -1,15 +1,29 @@
 const compose = (f, g) => (...args) => f(g(...args))
 
-const reduce = (f, acc, arr) =>
-  0 === arr.length
-    ? acc
-    : reduce(f, f(acc, arr[0]), arr.slice(1))
-const map = (f, xs) => reduce((acc,x) => acc.concat(f(x)), [], xs)
-const filter = (pred, arr) =>
-  0 === arr.length
+const apply = (f, x) => (y) => f(x, y)
+
+const repeat = (f, x, times) =>
+  times === 0
+    ? x
+    : repeat(f, f(x), times - 1)
+
+const curry = (f) => repeat(x => apply(apply, x), f, f.length - 1)
+
+const map = (f, xs) =>
+  0 === xs.length
     ? []
-    : pred(arr[0]) ? filter(pred, arr.slice(1)).concat([arr[0]])
-                   : filter(pred, arr.slice(1))
+    : [f(xs[0])].concat(map(f, xs.slice(1)))
+
+const filter = (pred, xs) =>
+  0 === xs.length
+    ? []
+    : pred(xs[0]) ? [xs[0]].concat(filter(pred, xs.slice(1)))
+                  : filter(pred, xs.slice(1))
+
+const reduce = (f, acc, xs) =>
+  0 === xs.length
+    ? acc
+    : reduce(f, f(acc, xs[0]), xs.slice(1))
 
 const add = (a, b) => a + b
 const elem = (x, xs) => -1 < xs.indexOf(x)
@@ -59,4 +73,39 @@ const users2html = (us) => {
 
   return '<tbody>' + rowHtml + '</tbody>'
 }
+
+const logInOut = (f) =>
+    (...args) => {
+        const result = f(...args)
+        console.log("%s(%s) = %O", f.name, args.join(', '), result)
+        return result
+    }
+
+const fibo = (n) => n < 1 ? 0
+                          : n < 3 ? 1
+                                  : fibo(n-1) + fibo(n-2)
+
+const initCounter = (init) => () => init++
+
+const memo = (f) => {
+    _memo = {}
+    return (...args) => {
+        const input = JSON.stringify(args)
+        return _memo[input] ? _memo[input]
+                            : _memo[input] = f(...args)
+    }
+}
+
+const fibo_ = memo(
+    (n) => n < 1 ? 0 : n < 3 ? 1 : fibo_(n-1) + fibo_(n-2)
+)
+
+const fiboL = logInOut(memo(
+    (n) => n < 1 ? 0 : n < 3 ? 1 : fiboL(n-1) + fiboL(n-2)
+))
+
+const fiboL_ = logInOut(memo(
+    (n) => n < 1 ? 0 : n < 3 ? 1 : fiboL_(n-1) + fiboL_(n-2)
+))
+
 

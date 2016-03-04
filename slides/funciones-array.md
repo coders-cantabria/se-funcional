@@ -16,11 +16,15 @@ filter(() => true, [1, 2, 3]) === [1, 2, 3]
 filter(() => false, [1, 2, 3]) === []
 ```
 
+---
+
 Crear un nuevo array aplicando aplicando una funcion
 ```
 map :: (a -> b) -> [a] -> [b]
 map((x) => x + 1, [1, 2, 3]) === [2, 3, 4]
 ```
+
+---
 
 Combinar todos los elements del array para llegar a 1 valor
 ```

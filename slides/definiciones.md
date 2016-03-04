@@ -1,0 +1,5 @@
+# Definiciones
+
+* map
+* filter
+* reduce

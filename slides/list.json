@@ -22,6 +22,14 @@
   "abstraccion4.md",
   "abstraccion6.md",
 
+  [
+    "definiciones.md",
+    "map.md",
+    "filter.md",
+    "reduce.md",
+    "via-reduce.md"
+  ],
+
   "conceptos-fundamentales.md",
   "higher-order.md",
   "higher-order2.md",
