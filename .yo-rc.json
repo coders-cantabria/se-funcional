@@ -3,7 +3,7 @@
     "presentationTitle": "Sé funcional",
     "packageVersion": "0.1.0",
     "revealTheme": "black",
-    "useSass": false,
+    "useSass": true,
     "deployToGithubPages": true,
     "githubUsername": "sirreal",
     "githubRepository": "se-funcional"
