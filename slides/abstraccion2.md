@@ -3,12 +3,11 @@ const users2html = (us) => {
   let rowHtml = '';
   for (let i=0; i<us.length; i++) { const u = us[i]
     let colHtml = '<td>'+u.id+'</td>'
-                + '<td>'+u.name+'</td>'
-                + '<td>'+u.occupation+'</td>'
+                + '<td>'+u.name+'</td>' + '<td>'+u.occupation+'</td>'
 
     let balance = 0
-    for (let j=0; j<u.transactions.length; j++) { const t = u.transactions[j]
-      balance += t
+    for (let j=0; j<u.transactions.length; j++) {
+      balance += u.transactions[j]
     }
     colHtml += '<td>' + balance + ' €</td>'
     let friendsHtml = ''
@@ -22,6 +21,4 @@ const users2html = (us) => {
   }
   return '<tbody>' + rowHtml + '</tbody>'
 }
-
-document.querySelector('#app').innerHTML = users2html(users)
 ```

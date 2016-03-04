@@ -53,7 +53,7 @@ module.exports = (grunt) ->
                     # the server from outside.
                     hostname: 'localhost'
                     base: '.'
-                    open: true
+                    open: false
                     livereload: true
 
         coffeelint:
