@@ -6,3 +6,4 @@
 * Explícito no implícito (funciones operan sobre sus *input*)
 * Funciones pequeñas
 * Se tiende a reutilizar mucho
+
